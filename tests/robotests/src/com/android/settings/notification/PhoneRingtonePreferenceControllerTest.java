@@ -67,8 +67,7 @@ public class PhoneRingtonePreferenceControllerTest {
                 .thenReturn(mPreference);
         mController.displayPreference(mPreferenceScreen);
 
-        verify(mPreference).setTitle(mContext.getString(R.string.ringtone_title) + " - " +
-            String.format(mContext.getString(R.string.sim_card_number_title), 1)));
+        verify(mPreference).setTitle(mContext.getString(R.string.ringtone1_title));
     
 
     @Test
